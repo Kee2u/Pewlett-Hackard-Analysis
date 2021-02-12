@@ -8,5 +8,10 @@ I used Quick DBD to create the following schematic:
 
 <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png?raw=true">
 
-Next, I turned to PostgreSQL and created tables to upload the csv files using the command
-> CREATE TABLE
+Next, I turned to PostgreSQL and created tables to upload the csv files. Here is an example of the code
+> CREATE TABLE departments(
+>   dept_no VARCHAR(4) NOT NULL
+>   dept_name VARCHAR(40) NOT NULL,
+>   PRIMARY KEY (dept_no),
+>   UNIQUE(dept_name)
+>);
