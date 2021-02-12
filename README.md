@@ -18,7 +18,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     > INTO retirement_info <br/>
     > FROM employees <br/>
     > WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31') <br/>
-    > AND (hire_date BETWEEN '1958-01-01' AND '1988-12-31'); <br/> <br/>  
+    > AND (hire_date BETWEEN '1958-01-01' AND '1988-12-31'); <br/>  
     Here is the result: <br/>  
     <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_eligibility.jpg?raw=true" width = "500">
  
@@ -33,7 +33,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     >  FROM retirement_info as ri <br/>
     >  LEFT JOIN dept_emp as de <br/>
     >  ON ri.emp_no = de.emp_no <br/>
-    >  WHERE de.to_date = ('9999-01-01');<br/> <br/>  
+    >  WHERE de.to_date = ('9999-01-01');<br/>  
   Here is the result: <br/>  
  <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Retirement_info_2.jpg?raw=true">
   
@@ -46,7 +46,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     > LEFT JOIN dept_emp as de <br/>
     > ON ce.emp_no = de.emp_no <br/>
     > GROUP BY de.dept_no <br/>
-    > ORDER BY de.dept_no;<br/><br/>
+    > ORDER BY de.dept_no;<br/>
     Here is the result: <br/>  
     <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/count_by_department.jpg?raw=true" width = "500"> <br/>
  
@@ -83,7 +83,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
  >	INNER JOIN departments AS d<br/>
  > 		ON (dm.dept_no = d.dept_no)<br/>
  >	INNER JOIN current_emp AS ce<br/>
- >		ON (dm.emp_no = ce.emp_no);<br/><br/>
+ >		ON (dm.emp_no = ce.emp_no);<br/>
     Here is the result: <br/>  
     <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_info.jpg?raw=true"> <br/>
  
