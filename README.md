@@ -32,4 +32,15 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     >  LEFT JOIN dept_emp as de <br/>
     >  ON ri.emp_no = de.emp_no <br/>
     >  WHERE de.to_date = ('9999-01-01');
+    
+ 3. Next, I used the GROUP BY command to find the count of retiring employees by department. <br/><br/>
+ Here is the code I used: <br/>
+ 
+    > SELECT COUNT(ce.emp_no), de.dept_no <br/>
+    > FROM current_emp as ce <br/>
+    > LEFT JOIN dept_emp as de <br/>
+    > ON ce.emp_no = de.emp_no <br/>
+    > GROUP BY de.dept_no <br/>
+    > ORDER BY de.dept_no;
+  
    
