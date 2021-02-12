@@ -18,8 +18,11 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     > INTO retirement_info <br/>
     > FROM employees <br/>
     > WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31') <br/>
-    > AND (hire_date BETWEEN '1958-01-01' AND '1988-12-31'); <br/>
-    
+    > AND (hire_date BETWEEN '1958-01-01' AND '1988-12-31'); <br/> <br/>  
+ 
+ Here is the result: <br/>  
+ <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_eligibility.jpg?raw=true" width = "500">
+ 
  2. To determine if these employees were still in the company, I performed a left join between the retirement info table that I created and the dept_emp table. <br/><br/>
  Here is the code I used: <br/>
  
@@ -42,8 +45,10 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     > LEFT JOIN dept_emp as de <br/>
     > ON ce.emp_no = de.emp_no <br/>
     > GROUP BY de.dept_no <br/>
-    > ORDER BY de.dept_no;
-    
+    > ORDER BY de.dept_no;<br/><br/>
+  Here is the result: <br/>  
+ <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/count_by_department.jpg?raw=true" width = "500"> <br/>
+ 
  2. Employee Information: I created a list of retiring employees containing their unique employee number, their last name, first name, gender and salary. I used on a join on three tables to achieve this. <br/><br/>
  Here is the code: <br/>
  
