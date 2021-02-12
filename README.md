@@ -19,9 +19,8 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     > FROM employees <br/>
     > WHERE (birth_date BETWEEN '1952-01-01' AND '1955-12-31') <br/>
     > AND (hire_date BETWEEN '1958-01-01' AND '1988-12-31'); <br/> <br/>  
- 
- Here is the result: <br/>  
- <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_eligibility.jpg?raw=true" width = "500">
+    Here is the result: <br/>  
+    <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_eligibility.jpg?raw=true" width = "500">
  
  2. To determine if these employees were still in the company, I performed a left join between the retirement info table that I created and the dept_emp table. <br/><br/>
  Here is the code I used: <br/>
@@ -34,7 +33,9 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     >  FROM retirement_info as ri <br/>
     >  LEFT JOIN dept_emp as de <br/>
     >  ON ri.emp_no = de.emp_no <br/>
-    >  WHERE de.to_date = ('9999-01-01');
+    >  WHERE de.to_date = ('9999-01-01');<br/> <br/>  
+  Here is the result: <br/>  
+ <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Retirement_info_2.jpg?raw=true">
   
 ### Determining Number of People Leaving Per Department  
  1. I used the GROUP BY command to find the count of retiring employees by department. <br/><br/>
@@ -46,8 +47,8 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     > ON ce.emp_no = de.emp_no <br/>
     > GROUP BY de.dept_no <br/>
     > ORDER BY de.dept_no;<br/><br/>
-  Here is the result: <br/>  
- <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/count_by_department.jpg?raw=true" width = "500"> <br/>
+    Here is the result: <br/>  
+    <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/count_by_department.jpg?raw=true" width = "500"> <br/>
  
  2. Employee Information: I created a list of retiring employees containing their unique employee number, their last name, first name, gender and salary. I used on a join on three tables to achieve this. <br/><br/>
  Here is the code: <br/>
@@ -82,4 +83,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
  >	INNER JOIN departments AS d<br/>
  > 		ON (dm.dept_no = d.dept_no)<br/>
  >	INNER JOIN current_emp AS ce<br/>
- >		ON (dm.emp_no = ce.emp_no);<br/>
+ >		ON (dm.emp_no = ce.emp_no);<br/><br/>
+    Here is the result: <br/>  
+    <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_info.jpg?raw=true"> <br/>
+ 
