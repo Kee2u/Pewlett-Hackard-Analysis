@@ -33,9 +33,9 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     >  FROM retirement_info as ri <br/>
     >  LEFT JOIN dept_emp as de <br/>
     >  ON ri.emp_no = de.emp_no <br/>
-    >  WHERE de.to_date = ('9999-01-01');<br/>  
-  Here is the result: <br/>  
- <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Retirement_info_2.jpg?raw=true">
+    >  WHERE de.to_date = ('9999-01-01');<br/>
+    Here is the result: <br/>
+    <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Retirement_info_2.jpg?raw=true">
   
 ### Determining Number of People Leaving Per Department  
  1. I used the GROUP BY command to find the count of retiring employees by department. <br/><br/>
@@ -84,6 +84,6 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
  > 		ON (dm.dept_no = d.dept_no)<br/>
  >	INNER JOIN current_emp AS ce<br/>
  >		ON (dm.emp_no = ce.emp_no);<br/>
-    Here is the result: <br/>  
-    <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_info.jpg?raw=true"> <br/>
+ Here is the result: <br/>  
+ <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_info.jpg?raw=true"> <br/>
  
