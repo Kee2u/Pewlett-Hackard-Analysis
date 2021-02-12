@@ -51,7 +51,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
     <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/count_by_department.jpg?raw=true" width = "500"> <br/>
  
  2. Employee Information: I created a list of retiring employees containing their unique employee number, their last name, first name, gender and salary. I used on a join on three tables to achieve this. <br/><br/>
- Here is the code: <br/>
+ Here is the code I used:: <br/>
  
    > SELECT e.emp_no,<br/>
    >	e.first_name,<br/>
@@ -70,7 +70,7 @@ Next, I turned to PostgreSQL and created tables to upload the csv files using th
    > AND (de.to_date = '9999-01-01'); <br/>
  
  2. Management Information: I created a list of managers retiring from each department. The information I needed was in three tables: Departments, Managers and Employees. <br/><br/>
- Here is the code: <br/>
+ Here is the code I used:: <br/>
  > SELECT dm.dept_no,<br/>
  > 	  d.dept_name,<br/>
  >	  dm.emp_no,<br/>
