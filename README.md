@@ -1,13 +1,21 @@
 # Pewlett-Hackard-Analysis
 ## Overview
-Pewlett Hackard is a fictional company that is facing the problem of a large percentage of their workforce retiring at the same time. In this analysis, I queried employee data using PostgreSQL to determine the impact from workers retiring. 
+Pewlett Hackard is a fictional company that is facing the problem of a large percentage of their workforce retiring at the same time. In this analysis, I queried the number of retiring employees per title using Postgres and identified employees who were eligible to participate in the mentorship program.
 
-## Analysis
-After gathering the required csv files, I created an Entity Relationship Diagram to determine the primary keys and map out the relationship them.
-I used Quick DBD to create the following schematic:
+## Results
+ - There are a total of 90398 employees who were born between January 1, 1952 and December 31, 1955. They are eligible for retirement. 
+    - Here is a table of all the retiring employees along with their past positions
+<img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Unique_title.PNG?raw=truee">
 
-<img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/EmployeeDB.png?raw=true">
-
+ - These employees held a total of 133776 positions over the course of their career.
+    - Here is a table of all the retiring employees along with their past positions
+  <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_titles.PNG?raw=true">
+ 
+ - Here is the breakdown of retirement-ready individuals by title
+ 
+ - There are a total of 1549 mentorship eligible workers. The criteria that makes them mentorship eligible is that they were born between January 1, 1965 and December 31, 1965.
+ 
+ 
 Next, I turned to PostgreSQL and created tables to upload the csv files using the CREATE command. here is an example of the code:
 
 ### Determining Retirement Eligibility
