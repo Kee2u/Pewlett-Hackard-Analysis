@@ -5,16 +5,17 @@ Pewlett Hackard is a fictional company that is facing the problem of a large per
 ## Results
  - There are a total of 90398 employees who were born between January 1, 1952 and December 31, 1955. They are eligible for retirement. 
     - Here is a table of all the retiring employees along with their past positions
-<img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Unique_title.PNG?raw=truee">
+<img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/Unique_title.PNG?raw=truee" width = "600">
 
  - These employees held a total of 133776 positions over the course of their career.
     - Here is a table of all the retiring employees along with their past positions
-  <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_titles.PNG?raw=true">
+  <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/retirement_titles.PNG?raw=true" width = "600">
  
  - Here is the breakdown of retirement-ready individuals by title
- 
+ <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/RetiringEmployees.PNG?raw=true" width = "300">
+    
  - There are a total of 1549 mentorship eligible workers. The criteria that makes them mentorship eligible is that they were born between January 1, 1965 and December 31, 1965.
- 
+ <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/mentorship_eligibility.PNG?raw=true" width = "600">
  
 Next, I turned to PostgreSQL and created tables to upload the csv files using the CREATE command. here is an example of the code:
 
