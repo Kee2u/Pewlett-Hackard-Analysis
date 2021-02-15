@@ -21,7 +21,7 @@ Pewlett Hackard is a fictional company that is facing the problem of a large per
    - As workers start to retire, a total of 90398 roles will need to be filled
    - There are only 1549 mentorship eligible workers to mentor the newer employees. Assuming that every new worker needs one mentor, there are not nearly enough mentors available.
    
-   Here is a summary of the number of mentorship eligible workers by department. (Comparing it to the previous breakdown of number of retiring employees by title , we can see that there are not enough mentors for each position) 
+   Here is a summary of the number of mentorship eligible workers by department. (Comparing it to the previous breakdown of number of retiring employees by title , we can see that there are not enough mentors for each position) <br /> 
    <img src = "https://github.com/Kee2u/Pewlett-Hackard-Analysis/blob/main/MentorEmployees.PNG?raw=true" width = "300">
    
    However, taking a closer look at the positions, we can make a reasonable assumption that a Senior Engineer and Senior Staff member will be able to mentor newer Engineers and Staff. Here is the count of senior engineers  and senior staff who were born after December 31, 1955 (not yet eligible for retirement). <br /> 
